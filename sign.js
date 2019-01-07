@@ -1,14 +1,18 @@
-
+const dsteem = require('dsteem');
+const client = new dsteem.Client('https://api.steemit.com');
+require('dotenv').config();
 createTx();
 
 async function createTx(){
 
+// max expiration time is 1h but it sometimes fails at exactly one hour.
 const expireTime=1000*3590;
 const props = await client.database.getDynamicGlobalProperties();
 const ref_block_num = props.head_block_number & 0xFFFF;
 const ref_block_prefix = Buffer.from(props.head_block_id, 'hex').readUInt32LE(4);
 const expiration = new Date(Date.now() + expireTime).toISOString().slice(0, -5);
 const extensions = [];
+// Example operation for sending 5 STEEM to @stoodkev
 const operations= [['transfer',
                  {'amount': '5.000 STEEM',
                   'from': 'multisig',
