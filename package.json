@@ -1,0 +1,28 @@
+{
+  "name": "multisig",
+  "version": "1.0.0",
+  "description": "Multisig sample",
+  "main": "updateAccount.js",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "dsteem": "^0.11.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "update": "node updateAccount"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoodkev/multisig.git"
+  },
+  "keywords": [
+    "multisig",
+    "authority"
+  ],
+  "author": "stoodkev",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/stoodkev/multisig/issues"
+  },
+  "homepage": "https://github.com/stoodkev/multisig#readme"
+}
