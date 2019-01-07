@@ -9,7 +9,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "update": "node updateAccount"
+    "update": "node updateAccount",
+    "sign": "node sign"
   },
   "repository": {
     "type": "git",
