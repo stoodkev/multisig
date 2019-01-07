@@ -6,7 +6,7 @@ To better comprehend how to use Multisign on the Steem blockchain with DSteem, p
 
 - Clone this repository:
 
-`git clone https://stoodkev/multisig`
+`git clone https://github.com/stoodkev/multisig`
 
 - Install the project
 
